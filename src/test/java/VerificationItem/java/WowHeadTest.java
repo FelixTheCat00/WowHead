@@ -17,14 +17,14 @@ import OutilsProjet.java.PagePremierResultat;
 public class WowHeadTest {
 
 	WebDriver driver;
-	
+	String browser =System.getProperty("browser");
 	
 	@Before
 	public void setupTest() {
 		
-		String browser1 =System.getProperty("browser");
 		
-		switch(browser1) {
+		
+		switch(browser) {
 		
 		  case "chrome":
 			  System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\chromedriver.exe");
