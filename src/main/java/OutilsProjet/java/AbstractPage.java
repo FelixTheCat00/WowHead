@@ -38,7 +38,7 @@ public class AbstractPage {
 	}
 	
 	public void acceptCookie() throws InterruptedException {
-		Thread.sleep(9000);
+		Thread.sleep(10000);
 		if(continueCookieButton.isDisplayed()) {
 		continueCookieButton.click();} else {}
 		//return PageFactory.initElements(driver, PageAccueil.class);
