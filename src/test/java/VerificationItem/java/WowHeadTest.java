@@ -23,21 +23,16 @@ public class WowHeadTest {
 	public void setupTest() {
 		
 		
-		
-		switch(browser) {
-		
-		  case "chrome":
-			  System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\chromedriver.exe");
-				driver = new ChromeDriver();
-		    break;
-		  case "gecko":
-			  System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\geckodriver.exe");
-			   driver = new FirefoxDriver();
-		    break;
-		  case "ie":
-			  System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\IEDriverServer.exe");
-			  driver =  new InternetExplorerDriver();			
-		}
+		if (browser.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\chromedriver.exe");
+			driver = new ChromeDriver();
+			} else if (browser.equals("gecko")) {
+				  System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\geckodriver.exe");
+				   driver = new FirefoxDriver();
+			} else if  (browser.equals("ie")) {
+				System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\IEDriverServer.exe");
+				  driver =  new InternetExplorerDriver();
+			}	
 	}
 	
 	@Test
