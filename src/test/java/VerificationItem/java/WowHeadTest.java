@@ -53,7 +53,7 @@ public class WowHeadTest {
 		
 		System.out.println(" -------------------- Accession à la page lardeur ----------------------");
 		PageLardeur pageLardeur = pagePremier.clickOnTeteDeMort();
-		Thread.sleep(5000);
+		Thread.sleep(6000);
 		System.out.println(" -------------------- Clique sur la page lardeur ----------------------");
 		pageLardeur.checkLardeur();
 		
