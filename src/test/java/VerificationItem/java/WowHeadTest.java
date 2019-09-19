@@ -24,13 +24,13 @@ public class WowHeadTest {
 		
 		
 		if (browser.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\chromedriver.exe");
+		//	System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\chromedriver.exe");
 			driver = new ChromeDriver();
 			} else if (browser.equals("firefox")) {
-				  System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\geckodriver.exe");
+		//		  System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\geckodriver.exe");
 				   driver = new FirefoxDriver();
 			} else if  (browser.equals("ie")) {
-				System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\IEDriverServer.exe");
+		//		System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\IEDriverServer.exe");
 				  driver =  new InternetExplorerDriver();
 			}	
 	}
