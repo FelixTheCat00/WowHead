@@ -17,7 +17,7 @@ import OutilsProjet.java.PagePremierResultat;
 public class WowHeadTest {
 
 	WebDriver driver;
-	String browser =System.getProperty("browser");
+	String browser =System.getProperty("browser").toLowerCase().trim();
 	
 	@Before
 	public void setupTest() {
@@ -26,7 +26,7 @@ public class WowHeadTest {
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\chromedriver.exe");
 			driver = new ChromeDriver();
-			} else if (browser.equals("gecko")) {
+			} else if (browser.equals("firefox")) {
 				  System.setProperty("webdriver.chrome.driver", "C:\\Installation\\driver\\geckodriver.exe");
 				   driver = new FirefoxDriver();
 			} else if  (browser.equals("ie")) {
@@ -38,6 +38,7 @@ public class WowHeadTest {
 	@Test
 	public void wowHeadTest () throws InterruptedException {
        
+		
 		driver.manage().window().maximize();
 		driver.get("https://fr.wowhead.com");
 

@@ -43,5 +43,7 @@ public class AbstractPage {
 		continueCookieButton.click();} else {}
 		//return PageFactory.initElements(driver, PageAccueil.class);
 	}
+	
+	
 
 }
